@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Personal Website' });
 });
 
-app.get('/download', function (req, res) {
+router.get('/download', function (req, res) {
   const file = path.join(__dirname, "../public/data/MohammadBakhshi_Resume.pdf");
   res.download(file);
 });

@@ -76,25 +76,24 @@
       <h2 class="title">My skills</h2>
       <div class="skills-content">
         <div class="column left">
-          <div class="text">My creative skills & experiences.</div>
+          <div class="text">My creative skills</div>
           <p>
-            Javascript / TypeScript/ NodeJS /
-            Express.js / Nest.js / Socket.io /
-            Modular Programming /
-            Authentication & Authorization:
-            Session based Auth, JWT , OAuth ,
-            Passport.js / EJS ( template engine
-            ) / Documentation (Swagger) /
-            GraphQL / Apollo Server/
-            WebDriverIO/ TDD : Jest
-            Database: SQL / NoSQL /
-            MongoDB / Redis / Mongoose /
-            Prisma
-            Tools: Postman / MongoDB
-            Compass / Git/ Docker
-            HTML and CSS: HTML5 / CSS3 /
-            Responsive Design
-            Familiar with: React JS
+            Javascript / TypeScript/ NodeJS / NPM/
+            Express.js / Nest.js / REST API /
+            Apollo Server / GraphQL/
+            multer/ WebdriverIO/ Testing: Jest/
+            Templating Engine: EJS <br>
+            Auth:Session Based
+            Authentication - Token Based
+            Authentication / JWT / Hashing
+            (bcrypt.js) <br>
+            Database: NoSQL= MongoDB /
+            ODM= Mongoose, ORM= Prisma/
+            Redis <br>
+            Tools: Postman / Version control=
+            Git / MongoDB Compass/ Docker/
+            Documentation: Swagger <br>
+            HTML and CSS: HTML5 / CSS3
           </p>
           <a href="#">Read more</a>
         </div>
@@ -136,21 +135,20 @@
         </div>
         <div class="column right">
           <div class="text">Message me</div>
-          <form action="mailto:mohammadbakhshi1979@gmail.com" method="post" enctype="multipart/form-data"
-            name="EmailForm">
+          <form action="/email" method="post" name="EmailForm">
             <div class="fields">
               <div class="field name">
-                <input type="text" placeholder="Name" required />
+                <input type="text" placeholder="Name" name="name" required />
               </div>
               <div class="field email">
-                <input type="email" placeholder="Email" required />
+                <input type="email" placeholder="Email" name="email" required />
               </div>
             </div>
             <div class="field">
-              <input type="text" placeholder="Subject" required />
+              <input type="text" placeholder="Subject" name="subject" required />
             </div>
             <div class="field textarea">
-              <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+              <textarea cols="30" rows="10" placeholder="Message.." name="text" required></textarea>
             </div>
             <div class="button-area">
               <button type="submit">Send message</button>
